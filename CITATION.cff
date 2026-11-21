@@ -7,11 +7,10 @@ date-released: "2026-11-21"
 license: MIT
 repository-code: "https://github.com/spr027/mechpde-verify"
 authors:
-  - family-names: "Reddy"
-    given-names: "Sai Prasad"
+  - family-names: "Batchu"
+    given-names: "Sai Prasad Reddy"
     affiliation: "Department of Mechanical and Industrial Engineering, Indian Institute of Technology Roorkee"
-    # Replace with your 16-digit ORCID iD once registered at https://orcid.org/register
-    # orcid: "https://orcid.org/0000-0000-0000-0000"
+    orcid: "https://orcid.org/0009-0009-9523-4339"
 keywords:
   - computational mechanics
   - partial differential equations
