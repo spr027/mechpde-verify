@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mechpde-verify"
+version = "0.1.0"
+description = "Reproducible finite-difference and finite-volume PDE solvers with Method of Manufactured Solutions (MMS) and physics-residual verification for computational mechanics."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [
+  { name = "Sai Prasad Reddy", email = "110778339+spr027@users.noreply.github.com" },
+]
+keywords = [
+  "computational-mechanics",
+  "pde-solver",
+  "method-of-manufactured-solutions",
+  "numerical-verification",
+  "scientific-computing",
+  "finite-difference",
+  "finite-volume",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+  "numpy>=1.26.0",
+  "scipy>=1.12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "matplotlib>=3.8.0",
+]
+
+[project.scripts]
+mechpde-verify = "mechpde_verify.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/spr027/mechpde-verify"
+Repository = "https://github.com/spr027/mechpde-verify"
+Issues = "https://github.com/spr027/mechpde-verify/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mechpde_verify"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

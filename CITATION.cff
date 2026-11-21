@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark suite in your research, please cite it as below."
+type: software
+title: "mechpde-verify: Reproducible PDE Solvers and Method-of-Manufactured-Solutions Verification Suite for Computational Mechanics"
+version: "0.1.0"
+date-released: "2026-11-21"
+license: MIT
+repository-code: "https://github.com/spr027/mechpde-verify"
+authors:
+  - family-names: "Reddy"
+    given-names: "Sai Prasad"
+    affiliation: "Department of Mechanical and Industrial Engineering, Indian Institute of Technology Roorkee"
+    # Replace with your 16-digit ORCID iD once registered at https://orcid.org/register
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+keywords:
+  - computational mechanics
+  - partial differential equations
+  - method of manufactured solutions
+  - grid convergence index
+  - numerical verification
